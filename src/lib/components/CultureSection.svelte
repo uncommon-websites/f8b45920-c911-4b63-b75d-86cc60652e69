@@ -1,44 +1,38 @@
 <script lang="ts">
-  const cards = [
+  const principles = [
     {
-      title: "We're Not a Traditional Agency...",
-      subtitle: "We're Your Marketing General Contractor.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+      title: "Your Marketing General Contractor",
+      desc: "We're not a traditional agency. We design the blueprint and hand-pick specialists for each engagement—all under our supervision."
     },
     {
-      title: "We Don't Chase Vanity Metrics...",
-      subtitle: "We Measure Success in Dollars.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+      title: "We Measure Success in Dollars",
+      desc: "No vanity metrics. Every decision is grounded in unit economics and what actually moves your bottom line."
     },
     {
-      title: "We Don't Use One-Size-Fits-All...",
-      subtitle: "We Build Custom Teams for Your Challenge.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+      title: "Custom Teams for Your Challenge",
+      desc: "No one-size-fits-all solutions. We build the right team with the right expertise for your specific growth challenge."
     }
   ];
 </script>
 
-<section class="py-24 px-6 md:px-12 bg-white">
-  <div class="max-w-2xl mb-16">
-    <p class="text-xl md:text-2xl leading-relaxed text-gray-800">
-      Modern marketing is a mess. Too many platforms, vendors, and agencies. We cut through the chaos to focus on challenges actually worth solving—grounded in what moves your bottom line.
-    </p>
-  </div>
+<section class="py-32 px-6 md:px-12 bg-white border-t border-gray-200">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-3xl mb-20">
+      <h2 class="text-3xl md:text-4xl font-medium mb-6">
+        A different approach to growth marketing
+      </h2>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        Modern marketing is a mess. Too many platforms, vendors, and agencies. We cut through the chaos to focus on challenges actually worth solving.
+      </p>
+    </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    {#each cards as card}
-      <div class="group">
-        <div class="aspect-[4/3] overflow-hidden rounded-lg mb-4 bg-gray-100">
-          <img src={card.image} alt={card.title} class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      {#each principles as principle}
+        <div>
+          <h3 class="text-xl font-medium mb-3">{principle.title}</h3>
+          <p class="text-gray-600 leading-relaxed">{principle.desc}</p>
         </div>
-        <h3 class="text-sm text-gray-500 mb-1">{card.title}</h3>
-        <p class="text-sm font-bold">{card.subtitle}</p>
-        
-        <div class="flex justify-between mt-4 text-xs text-gray-400">
-           <span>01</span>
-           <span>-></span>
-        </div>
-      </div>
-    {/each}
+      {/each}
+    </div>
   </div>
 </section>

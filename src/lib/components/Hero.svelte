@@ -9,19 +9,22 @@
   ];
 </script>
 
-<section class="relative min-h-screen flex flex-col justify-end pb-20 px-6 md:px-12 bg-gradient-to-b from-black via-gray-900 to-white text-black">
-  <!-- Gradient overlay/background handling -->
-  <div class="absolute inset-0 z-[-1] bg-[linear-gradient(180deg,#000_0%,#1a1a1a_30%,#f5f5f5_80%,#fff_100%)]"></div>
-
-  <div class="max-w-4xl mb-32 pt-40">
-    <h1 class="text-3xl md:text-5xl font-medium leading-[1.15] tracking-tight">
-      Marketing for Tomorrow's Billion Dollar Brands. <span class="text-gray-500">Fractional CMO leadership and specialist-driven execution that delivers profitable, compounding growth—without the Fortune 500 overhead.</span>
+<section class="relative min-h-screen flex flex-col justify-center px-6 md:px-12 py-32 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.1] tracking-tight mb-8">
+      Marketing for Tomorrow's Billion Dollar Brands
     </h1>
+    <p class="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl">
+      Fractional CMO leadership and specialist-driven execution that delivers profitable, compounding growth—without the Fortune 500 overhead.
+    </p>
   </div>
 
-  <div class="border-t border-gray-300 pt-8 flex flex-wrap gap-8 md:gap-16 items-center opacity-60 grayscale">
-    {#each logos as logo}
-      <div class="h-8 flex items-center justify-center font-bold text-xl">{logo}</div>
-    {/each}
+  <div class="max-w-5xl mx-auto mt-24 pt-12 border-t border-gray-200">
+    <p class="text-sm text-gray-500 mb-6">Trusted by world-class brands</p>
+    <div class="flex flex-wrap gap-x-12 gap-y-6 items-center opacity-40">
+      {#each logos as logo}
+        <div class="text-lg font-medium text-gray-900">{logo}</div>
+      {/each}
+    </div>
   </div>
 </section>
