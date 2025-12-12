@@ -1,19 +1,19 @@
 <script lang="ts">
   const cards = [
     {
-      title: "We're Not Just a Vendor...",
-      subtitle: "We're Your Partner In Crime.",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      title: "We Don't Just Follow Trends...",
-      subtitle: "We Shape New Territories.",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      title: "We Don't Play By The Book...",
-      subtitle: "We Write It Together.",
+      title: "We're Not a Traditional Agency...",
+      subtitle: "We're Your Marketing General Contractor.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      title: "We Don't Chase Vanity Metrics...",
+      subtitle: "We Measure Success in Dollars.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      title: "We Don't Use One-Size-Fits-All...",
+      subtitle: "We Build Custom Teams for Your Challenge.",
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
     }
   ];
 </script>
@@ -21,7 +21,7 @@
 <section class="py-24 px-6 md:px-12 bg-white">
   <div class="max-w-2xl mb-16">
     <p class="text-xl md:text-2xl leading-relaxed text-gray-800">
-      Collaboration isn't just a buzzword—it's how we roll. We're not here to hand off some cookie-cutter deliverable and disappear; we're in it with you, from day one.
+      Modern marketing is a mess. Too many platforms, vendors, and agencies. We cut through the chaos to focus on challenges actually worth solving—grounded in what moves your bottom line.
     </p>
   </div>
 

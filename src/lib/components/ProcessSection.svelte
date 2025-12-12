@@ -3,31 +3,31 @@
 
   const steps = [
     {
-      id: "discover",
-      title: "Discover Novel Opportunities",
-      text: "The right problem is the one worth solving. We quickly uncover actionable opportunities through data and business insights, ensuring that every discovery is grounded in what matters most for your business and your users.",
-      tags: ["Business & Market Research", "Data Driven Insights", "UX Audits", "Customer Journey Mapping", "Brand Perception Analysis", "Technical Assessment"],
+      id: "planning",
+      title: "Align with Business Objectives",
+      text: "We ground every engagement in commercial objectives, market realities, and unit economics. Your marketing engine stays in lockstep with your P&L—no vanity metrics, just dollars that matter.",
+      tags: ["Business Planning", "Unit Economics", "Market Analysis", "Commercial Objectives", "P&L Alignment", "Growth Modeling"],
       graphic: "lines"
     },
     {
-      id: "envision",
-      title: "Envision Innovative Strategies",
-      text: "Great strategies don't just come from ideas—they come from clear, actionable plans. We create pragmatic roadmaps that balance ambition with feasibility, focusing on what will drive immediate and long-term impact for both business and users.",
-      tags: ["CX & Product Strategy", "Vision & Roadmapping", "Value Proposition Design", "Northstar Metric Framework", "Brand Strategy & Positioning", "Technical Solution Design"],
+      id: "strategy",
+      title: "Design Your Growth Blueprint",
+      text: "We distill your brand, audience, and customer lifecycle into a clear roadmap. No jargon, no busywork—just a pragmatic plan that bridges brand and performance to drive compounding growth.",
+      tags: ["Marketing Strategy", "Brand Positioning", "Audience Mapping", "Customer Lifecycle", "Channel Prioritization", "Growth Roadmap"],
       graphic: "curve"
     },
     {
-      id: "build",
-      title: "Build Engaging Touchpoints",
-      text: "We turn strategy into action—fast and efficiently. Whether designing intuitive interfaces, visual identities, or building scalable platforms, we focus on building holistic experiences that are both joyful and effective.",
-      tags: ["UX & UI Design", "Information Architecture", "App & Web Design", "Design Systems", "Content Strategy", "Agile Software Engineering"],
+      id: "activation",
+      title: "Deploy the Right Channel Mix",
+      text: "We activate the channels that move the needle—PPC, CTV, SEO, Email/SMS—with data-driven dashboards that give you complete visibility into what's working and what's not.",
+      tags: ["PPC Management", "Connected TV", "SEO Strategy", "Email & SMS", "Programmatic Media", "Performance Dashboards"],
       graphic: "circle-top"
     },
     {
-      id: "elevate",
-      title: "Elevate Delivery Capabilities",
-      text: "We make sure teams can deliver better outcomes, faster. By evolving collaborative workflows, upskilling teams, and implementing the right tools, we help you scale with confidence and consistency.",
-      tags: ["AI Consulting", "QA & Delivery", "Process Optimization", "Performance Analytics", "Continuous Improvement", "Change Management"],
+      id: "execution",
+      title: "Execute with Precision",
+      text: "Our hand-picked specialists handle every build under our supervision. We translate strategy into scroll-stopping creative and campaigns that convert attention to revenue—fast.",
+      tags: ["Campaign Management", "Creative Execution", "Ongoing Optimization", "Specialist Network", "Quality Control", "Revenue Focus"],
       graphic: "circle-waves"
     }
   ];
@@ -63,16 +63,16 @@
   });
 </script>
 
-<section class="bg-[#1a1a40] text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
+<section class="bg-black text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
   <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12">
     
     <!-- Sticky Navigation -->
     <div class="md:w-1/2 md:h-[calc(100vh-6rem)] md:sticky md:top-24 flex flex-col justify-center">
       <div class="space-y-8">
         {#each steps as step, i}
-          <div class="transition-opacity duration-500 {i === activeStep ? 'opacity-100' : 'opacity-30'}">
+          <div class="transition-all duration-500 {i === activeStep ? 'opacity-100' : 'opacity-30'}">
             <p class="text-xl md:text-2xl font-light mb-1">People work with us to</p>
-            <h2 class="text-2xl md:text-3xl font-bold">{step.title}</h2>
+            <h2 class="text-2xl md:text-3xl font-bold {i === activeStep ? 'text-primary-400' : ''}">{step.title}</h2>
           </div>
         {/each}
       </div>
@@ -116,7 +116,7 @@
              <div class="grid grid-cols-2 gap-4 text-xs font-medium text-gray-600">
                {#each step.tags as tag}
                  <div class="flex items-center gap-2">
-                   <span class="w-1.5 h-1.5 bg-black rounded-full shrink-0"></span>
+                   <span class="w-1.5 h-1.5 bg-primary-500 rounded-full shrink-0"></span>
                    {tag}
                  </div>
                {/each}
